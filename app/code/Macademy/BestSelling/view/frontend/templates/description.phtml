@@ -1,0 +1,7 @@
+<?php 
+/** @var $block \Magento\Framework\Element\Template */
+/** @var Macademy\BestSelling\ViewModel\Description $descriptionViewModel */
+$descriptionViewModel = $block->getData('description_view_model');
+?>
+<p><?= $descriptionViewModel->getWithWordCount() ?></p>
+<?= $block->getChildHtml() ?>
